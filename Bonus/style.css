@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1E2D3B;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1070px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: rgb(46, 58, 70);
+}
+header img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.cds-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+.filter {
+    width: calc(240px * 4);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#selection{
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 3px solid rgb(46, 58, 70);
+  color: white;
+  font-weight: bold;
+}
+#selection option{
+  background: rgb(46, 58, 70);
+  padding: 15px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.cd {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 200px;
+    padding: 20px;
+    margin: 10px 20px;
+    height: 360px;
+    background: rgb(46, 58, 70);
+    text-align: center;
+    transition: translate 1s linear;
+}
+
+.cd img {
+    max-width: 100%;
+}
+
+.cd h3 {
+    margin: 20px 0;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.cd span.author {
+    color: grey;
+    font-size: 20px;
+}
+
+.cd span.year {
+    color: grey;
+}
+
+.cd span.genere {
+    display: none;
+}
